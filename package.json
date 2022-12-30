@@ -1,6 +1,6 @@
 {
   "name": "@bfr/ytt",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "description": "根据 YApi 的接口定义生成 TypeScript/JavaScript 的接口类型及其请求函数代码。",
   "keywords": [
     "yapi",
@@ -28,7 +28,7 @@
     "docs": "npm run docs:build && gh-pages --dist docs/dist --dest handbook",
     "docs:build": "dumi build",
     "docs:dev": "dumi dev",
-    "release": "yarn testOnly && standard-version -a && yarn build && yarn docs && git push --follow-tags origin master && npm publish",
+    "release": "yarn testOnly && standard-version -a && yarn build &&  git push --follow-tags origin master && npm publish",
     "releaseBeta": "yarn testOnly && standard-version -a --release-as patch --prerelease beta && yarn build && git push --follow-tags origin master && npm publish --tag next",
     "test": "jest --coverage",
     "testApi": "ts-node -T src/cli.ts",
