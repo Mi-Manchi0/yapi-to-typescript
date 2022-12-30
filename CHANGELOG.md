@@ -1,5 +1,8 @@
 # 更新日志
 
+
+### 1.1.1 (2022-12-30)
+
 ### [1.1.1](http://192.168.100.132:3030/web/yapi-to-typescript/compare/v1.0.10...v1.1.1) (2022-12-29)
 
 ## [3.36.0](https://github.com/fjc0k/yapi-to-typescript/compare/v3.35.0...v3.36.0) (2022-11-17)
