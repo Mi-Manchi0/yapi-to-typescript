@@ -164,16 +164,19 @@ export class Generator {
                           ...serverConfig,
                           ...projectConfig,
                           ...categoryConfig,
-                          mockUrl: projectInfo.getMockUrl(),
+                          // mockUrl: projectInfo.getMockUrl(),
+                          mockUrl: '',
+                          devUrl: '',
+                          prodUrl: '',
                         }
                         syntheticalConfig.target =
                           syntheticalConfig.target || 'typescript'
-                        syntheticalConfig.devUrl = projectInfo.getDevUrl(
-                          syntheticalConfig.devEnvName!,
-                        )
-                        syntheticalConfig.prodUrl = projectInfo.getProdUrl(
-                          syntheticalConfig.prodEnvName!,
-                        )
+                        // syntheticalConfig.devUrl = projectInfo.getDevUrl(
+                        //   syntheticalConfig.devEnvName!,
+                        // )
+                        // syntheticalConfig.prodUrl = projectInfo.getProdUrl(
+                        //   syntheticalConfig.prodEnvName!,
+                        // )
 
                         // 接口列表
                         let interfaceList = await this.fetchInterfaceList(
@@ -227,7 +230,7 @@ export class Generator {
                             const code = await this.generateInterfaceCode(
                               syntheticalConfig,
                               interfaceInfo,
-                              categoryUID,
+                              // categoryUID,
                             )
                             const weights: number[] = [
                               serverIndex,
@@ -259,18 +262,11 @@ export class Generator {
                                 syntheticalConfig.typesOnly
                                   ? ''
                                   : dedent`
-                                      const mockUrl${categoryUID} = ${JSON.stringify(
-                                      syntheticalConfig.mockUrl,
-                                    )} as any
-                                      const devUrl${categoryUID} = ${JSON.stringify(
-                                      syntheticalConfig.devUrl,
-                                    )} as any
-                                      const prodUrl${categoryUID} = ${JSON.stringify(
-                                      syntheticalConfig.prodUrl,
-                                    )} as any
-                                      const dataKey${categoryUID} = ${JSON.stringify(
-                                      syntheticalConfig.dataKey,
-                                    )} as any
+                                      const categoryUID = '${categoryUID}'
+                                      const mockUrl = '' as any
+                                      const devUrl = '' as any
+                                      const prodUrl = '' as any
+                                      const dataKey = undefined as any
                                     `,
                               ),
                               ...sortByWeights(
@@ -671,8 +667,8 @@ export class Generator {
     return {
       ...projectInfo,
       cats: projectCats,
-      getMockUrl: () =>
-        `${syntheticalConfig.serverUrl}/mock/${projectInfo._id}`,
+      getMockUrl: () => '',
+      // `${syntheticalConfig.serverUrl}/mock/${projectInfo._id}`,
       getDevUrl: (devEnvName: string) => {
         const env = projectInfo.env.find(e => e.name === devEnvName)
         return (env && env.domain) /* istanbul ignore next */ || ''
@@ -688,7 +684,7 @@ export class Generator {
   async generateInterfaceCode(
     syntheticalConfig: SyntheticalConfig,
     interfaceInfo: Interface,
-    categoryUID: string,
+    // categoryUID: string,
   ) {
     const extendedInterfaceInfo: ExtendedInterface = {
       ...interfaceInfo,
@@ -899,9 +895,9 @@ export class Generator {
 
             ${genComment(title => `接口 ${title} 的 **请求配置**`)}
             const ${requestConfigName}: ${requestConfigTypeName} = ${COMPRESSOR_TREE_SHAKING_ANNOTATION} {
-              mockUrl: mockUrl${categoryUID},
-              devUrl: devUrl${categoryUID},
-              prodUrl: prodUrl${categoryUID},
+              mockUrl: mockUrl,
+              devUrl: devUrl,
+              prodUrl: prodUrl,
               path: ${JSON.stringify(extendedInterfaceInfo.path)},
               method: Method.${extendedInterfaceInfo.method},
               requestHeaders: ${JSON.stringify(
@@ -921,7 +917,7 @@ export class Generator {
               responseBodyType: ResponseBodyType.${
                 extendedInterfaceInfo.res_body_type
               },
-              dataKey: dataKey${categoryUID},
+              dataKey: dataKey,
               paramNames: ${paramNamesLiteral},
               queryNames: ${queryNamesLiteral},
               requestDataOptional: ${JSON.stringify(isRequestDataOptional)},

@@ -16,6 +16,7 @@
     "paths": {
       "@bfr/ytt": ["./src/index.ts"]
     },
+    "typeRoots": ["./types"],
     "plugins": [
       {
         "name": "typescript-snapshots-plugin",

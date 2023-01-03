@@ -239,10 +239,13 @@ export function jsonSchemaToJSTTJsonSchema(
     // 忽略数组长度限制
     delete jsonSchema.minItems
     delete jsonSchema.maxItems
-
     if (jsonSchema.type === 'object') {
       // 将 additionalProperties 设为 false
-      jsonSchema.additionalProperties = false
+      if (typeof jsonSchema.additionalProperties === 'object') {
+        jsonSchema.additionalProperties.additionalProperties = false
+      } else {
+        jsonSchema.additionalProperties = false
+      }
     }
 
     // 删除 default，防止 json-schema-to-typescript 根据它推测类型
@@ -569,7 +572,11 @@ export function reachJsonSchema(
   return last
 }
 
-export function sortByWeights<T extends { weights: number[] }>(list: T[]): T[] {
+export function sortByWeights<
+  T extends {
+    weights: number[]
+  },
+>(list: T[]): T[] {
   list.sort((a, b) => {
     const x = a.weights.length > b.weights.length ? b : a
     const minLen = Math.min(a.weights.length, b.weights.length)
@@ -650,7 +657,7 @@ export async function httpGet<T>(
 
   const res = await nodeFetch(url, {
     method: 'GET',
-    agent: new ProxyAgent()
+    agent: new ProxyAgent(),
   })
 
   return res.json()

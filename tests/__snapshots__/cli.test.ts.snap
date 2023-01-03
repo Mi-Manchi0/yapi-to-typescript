@@ -164,10 +164,11 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const mockUrl_0_0_0_1 = 'http://foo.bar/mock/32' as any
-const devUrl_0_0_0_1 = '' as any
-const prodUrl_0_0_0_1 = 'http://prod.com/' as any
-const dataKey_0_0_0_1 = undefined as any
+const categoryUID = '_0_0_0_1'
+const mockUrl = '' as any
+const devUrl = '' as any
+const prodUrl = '' as any
+const dataKey = undefined as any
 
 /**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
@@ -200,16 +201,7 @@ export interface HelloDeleteMethodResponse {}
  * @更新时间 1610557429
  */
 type HelloDeleteMethodRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/deleteMethod',
-    undefined,
-    string,
-    string,
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/deleteMethod', undefined, string, string, false>
 >
 
 /**
@@ -220,15 +212,15 @@ type HelloDeleteMethodRequestConfig = Readonly<
  * @更新时间 1610557429
  */
 const helloDeleteMethodRequestConfig: HelloDeleteMethodRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/deleteMethod',
   method: Method.DELETE,
   requestHeaders: {},
   requestBodyType: RequestBodyType.json,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: false,
@@ -295,16 +287,7 @@ export interface HelloGetMethodResponse {
  * @更新时间 1610557429
  */
 type HelloGetMethodRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/getMethod',
-    undefined,
-    string,
-    'x' | 'y',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/getMethod', undefined, string, 'x' | 'y', false>
 >
 
 /**
@@ -315,15 +298,15 @@ type HelloGetMethodRequestConfig = Readonly<
  * @更新时间 1610557429
  */
 const helloGetMethodRequestConfig: HelloGetMethodRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/getMethod',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['x', 'y'],
   requestDataOptional: false,
@@ -386,16 +369,7 @@ export interface HelloJson5ResponseResponse {
  * @更新时间 1610557429
  */
 type HelloJson5ResponseRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/json5Response',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/json5Response', undefined, string, string, true>
 >
 
 /**
@@ -406,15 +380,15 @@ type HelloJson5ResponseRequestConfig = Readonly<
  * @更新时间 1610557429
  */
 const helloJson5ResponseRequestConfig: HelloJson5ResponseRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/json5Response',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -492,16 +466,7 @@ export interface HelloJson5RequestResponse {}
  * @更新时间 1610557429
  */
 type HelloJson5RequestRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/json5Request',
-    undefined,
-    string,
-    string,
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/json5Request', undefined, string, string, false>
 >
 
 /**
@@ -512,15 +477,15 @@ type HelloJson5RequestRequestConfig = Readonly<
  * @更新时间 1610557429
  */
 const helloJson5RequestRequestConfig: HelloJson5RequestRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/json5Request',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.json,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: false,
@@ -596,16 +561,7 @@ export interface HelloPostMethodResponse {
  * @更新时间 1610557429
  */
 type HelloPostMethodRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/postMethod',
-    undefined,
-    string,
-    string,
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/postMethod', undefined, string, string, false>
 >
 
 /**
@@ -616,15 +572,15 @@ type HelloPostMethodRequestConfig = Readonly<
  * @更新时间 1610557429
  */
 const helloPostMethodRequestConfig: HelloPostMethodRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/postMethod',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.json,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: false,
@@ -694,16 +650,7 @@ export interface HelloPutMethodResponse {
  * @更新时间 1610557429
  */
 type HelloPutMethodRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/putMethod',
-    undefined,
-    string,
-    'id' | 'namre',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/putMethod', undefined, string, 'id' | 'namre', false>
 >
 
 /**
@@ -714,15 +661,15 @@ type HelloPutMethodRequestConfig = Readonly<
  * @更新时间 1610557429
  */
 const helloPutMethodRequestConfig: HelloPutMethodRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/putMethod',
   method: Method.PUT,
   requestHeaders: {},
   requestBodyType: RequestBodyType.form,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['id', 'namre'],
   requestDataOptional: false,
@@ -797,16 +744,7 @@ export interface HelloDataKeyExampleResponse {
  * @更新时间 1610557430
  */
 type HelloDataKeyExampleRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/dataKeyExample',
-    undefined,
-    string,
-    'id' | 'namre',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/dataKeyExample', undefined, string, 'id' | 'namre', false>
 >
 
 /**
@@ -817,15 +755,15 @@ type HelloDataKeyExampleRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloDataKeyExampleRequestConfig: HelloDataKeyExampleRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/dataKeyExample',
   method: Method.PUT,
   requestHeaders: {},
   requestBodyType: RequestBodyType.form,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['id', 'namre'],
   requestDataOptional: false,
@@ -887,7 +825,7 @@ export interface HelloUploadResponse {}
  * @更新时间 1610557430
  */
 type HelloUploadRequestConfig = Readonly<
-  RequestConfig<'http://foo.bar/mock/32', '', 'http://prod.com/', '/__hello__/upload', undefined, string, string, false>
+  RequestConfig<'', '', '', '/__hello__/upload', undefined, string, string, false>
 >
 
 /**
@@ -898,15 +836,15 @@ type HelloUploadRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloUploadRequestConfig: HelloUploadRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/upload',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.form,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: false,
@@ -968,9 +906,7 @@ export interface HelloTestResponse {}
  * @请求头 \`POST /__hello__/test\`
  * @更新时间 1610557430
  */
-type HelloTestRequestConfig = Readonly<
-  RequestConfig<'http://foo.bar/mock/32', '', 'http://prod.com/', '/__hello__/test', undefined, string, 'cid', false>
->
+type HelloTestRequestConfig = Readonly<RequestConfig<'', '', '', '/__hello__/test', undefined, string, 'cid', false>>
 
 /**
  * 接口 [查询参数+对象↗](http://foo.bar/project/11/interface/api/93) 的 **请求配置**
@@ -980,15 +916,15 @@ type HelloTestRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloTestRequestConfig: HelloTestRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/test',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.json,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['cid'],
   requestDataOptional: false,
@@ -1038,16 +974,7 @@ export interface HelloNoResponseDataResponse {}
  * @更新时间 1610557430
  */
 type HelloNoResponseDataRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/noResponseData',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/noResponseData', undefined, string, string, true>
 >
 
 /**
@@ -1058,15 +985,15 @@ type HelloNoResponseDataRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloNoResponseDataRequestConfig: HelloNoResponseDataRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/noResponseData',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -1119,16 +1046,7 @@ export interface HelloEmptyResponseResponse {}
  * @更新时间 1610557430
  */
 type HelloEmptyResponseRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/emptyResponse',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/emptyResponse', undefined, string, string, true>
 >
 
 /**
@@ -1139,15 +1057,15 @@ type HelloEmptyResponseRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloEmptyResponseRequestConfig: HelloEmptyResponseRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/emptyResponse',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.form,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -1210,9 +1128,9 @@ export interface HelloPathIdHelloNamePassAvatarTestResponse {}
  */
 type HelloPathIdHelloNamePassAvatarTestRequestConfig = Readonly<
   RequestConfig<
-    'http://foo.bar/mock/32',
     '',
-    'http://prod.com/',
+    '',
+    '',
     '/__hello__/path/:id/hello/:name/:pass/{avatar}/:test',
     undefined,
     'id' | 'name' | 'pass' | 'test' | 'avatar',
@@ -1229,15 +1147,15 @@ type HelloPathIdHelloNamePassAvatarTestRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloPathIdHelloNamePassAvatarTestRequestConfig: HelloPathIdHelloNamePassAvatarTestRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/path/:id/hello/:name/:pass/{avatar}/:test',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.form,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: ['id', 'name', 'pass', 'test', 'avatar'],
   queryNames: [],
   requestDataOptional: false,
@@ -1310,16 +1228,7 @@ export interface HelloTestIdHihihiResponse {}
  * @更新时间 1610557430
  */
 type HelloTestIdHihihiRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/test/{id}/:hihihi',
-    undefined,
-    'hihihi' | 'id',
-    string,
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/test/{id}/:hihihi', undefined, 'hihihi' | 'id', string, false>
 >
 
 /**
@@ -1330,15 +1239,15 @@ type HelloTestIdHihihiRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloTestIdHihihiRequestConfig: HelloTestIdHihihiRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/test/{id}/:hihihi',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.json,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: ['hihihi', 'id'],
   queryNames: [],
   requestDataOptional: false,
@@ -1414,9 +1323,9 @@ export interface HelloTestIdHihihi_1608478638207Response {}
  */
 type HelloTestIdHihihi_1608478638207RequestConfig = Readonly<
   RequestConfig<
-    'http://foo.bar/mock/32',
     '',
-    'http://prod.com/',
+    '',
+    '',
     '/__hello__/test/{id}/:hihihi_1608478638207',
     undefined,
     'hihihi' | 'id' | 'hihihi_1608478638207',
@@ -1433,15 +1342,15 @@ type HelloTestIdHihihi_1608478638207RequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloTestIdHihihi_1608478638207RequestConfig: HelloTestIdHihihi_1608478638207RequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/test/{id}/:hihihi_1608478638207',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.json,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: ['hihihi', 'id', 'hihihi_1608478638207'],
   queryNames: ['query'],
   requestDataOptional: false,
@@ -1497,16 +1406,7 @@ export type HelloRawResponseResponse = any
  * @更新时间 1610557430
  */
 type HelloRawResponseRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/rawResponse',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/rawResponse', undefined, string, string, true>
 >
 
 /**
@@ -1517,15 +1417,15 @@ type HelloRawResponseRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloRawResponseRequestConfig: HelloRawResponseRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/rawResponse',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.raw,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -1575,7 +1475,7 @@ export interface HelloHeadersResponse {}
  * @更新时间 1619432971
  */
 type HelloHeadersRequestConfig = Readonly<
-  RequestConfig<'http://foo.bar/mock/32', '', 'http://prod.com/', '/__hello__/headers', undefined, string, string, true>
+  RequestConfig<'', '', '', '/__hello__/headers', undefined, string, string, true>
 >
 
 /**
@@ -1586,15 +1486,15 @@ type HelloHeadersRequestConfig = Readonly<
  * @更新时间 1619432971
  */
 const helloHeadersRequestConfig: HelloHeadersRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/headers',
   method: Method.GET,
   requestHeaders: {Authorization: 'dddddd', Cookie: 'x=1'},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -1657,16 +1557,7 @@ export interface HelloUserIdAvatarResponse {}
  * @更新时间 1621501310
  */
 type HelloUserIdAvatarRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/user/:id/avatar',
-    undefined,
-    'id',
-    'size' | 'format',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/user/:id/avatar', undefined, 'id', 'size' | 'format', false>
 >
 
 /**
@@ -1677,15 +1568,15 @@ type HelloUserIdAvatarRequestConfig = Readonly<
  * @更新时间 1621501310
  */
 const helloUserIdAvatarRequestConfig: HelloUserIdAvatarRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/user/:id/avatar',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: ['id'],
   queryNames: ['size', 'format'],
   requestDataOptional: false,
@@ -1748,16 +1639,7 @@ export interface HelloDataKeyDeepResponse {
  * @更新时间 1626489548
  */
 type HelloDataKeyDeepRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/dataKey/deep',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/dataKey/deep', undefined, string, string, true>
 >
 
 /**
@@ -1768,15 +1650,15 @@ type HelloDataKeyDeepRequestConfig = Readonly<
  * @更新时间 1626489548
  */
 const helloDataKeyDeepRequestConfig: HelloDataKeyDeepRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/dataKey/deep',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -1831,16 +1713,7 @@ export interface HelloGetOnlyPostFormDataResponse {}
  * @更新时间 1632493928
  */
 type HelloGetOnlyPostFormDataRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/get/only_post_form_data',
-    undefined,
-    string,
-    'query_id',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/get/only_post_form_data', undefined, string, 'query_id', false>
 >
 
 /**
@@ -1851,15 +1724,15 @@ type HelloGetOnlyPostFormDataRequestConfig = Readonly<
  * @更新时间 1632493928
  */
 const helloGetOnlyPostFormDataRequestConfig: HelloGetOnlyPostFormDataRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_1,
-  devUrl: devUrl_0_0_0_1,
-  prodUrl: prodUrl_0_0_0_1,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/get/only_post_form_data',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_1,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['query_id'],
   requestDataOptional: false,
@@ -1886,10 +1759,11 @@ export const helloGetOnlyPostFormData = /*#__PURE__*/ (
 
 helloGetOnlyPostFormData.requestConfig = helloGetOnlyPostFormDataRequestConfig
 
-const mockUrl_0_0_0_2 = 'http://foo.bar/mock/32' as any
-const devUrl_0_0_0_2 = '' as any
-const prodUrl_0_0_0_2 = 'http://prod.com/' as any
-const dataKey_0_0_0_2 = undefined as any
+const categoryUID = '_0_0_0_2'
+const mockUrl = '' as any
+const devUrl = '' as any
+const prodUrl = '' as any
+const dataKey = undefined as any
 
 /**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
@@ -1921,9 +1795,7 @@ export interface HelloGet2Response {
  * @请求头 \`GET /__hello__/get2\`
  * @更新时间 1610557430
  */
-type HelloGet2RequestConfig = Readonly<
-  RequestConfig<'http://foo.bar/mock/32', '', 'http://prod.com/', '/__hello__/get2', undefined, string, string, true>
->
+type HelloGet2RequestConfig = Readonly<RequestConfig<'', '', '', '/__hello__/get2', undefined, string, string, true>>
 
 /**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求配置**
@@ -1934,15 +1806,15 @@ type HelloGet2RequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloGet2RequestConfig: HelloGet2RequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_2,
-  devUrl: devUrl_0_0_0_2,
-  prodUrl: prodUrl_0_0_0_2,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/get2',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_2,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -1995,16 +1867,7 @@ export interface HelloDefaultValueResponse {
  * @更新时间 1642140816
  */
 type HelloDefaultValueRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/default_value',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/default_value', undefined, string, string, true>
 >
 
 /**
@@ -2015,15 +1878,15 @@ type HelloDefaultValueRequestConfig = Readonly<
  * @更新时间 1642140816
  */
 const helloDefaultValueRequestConfig: HelloDefaultValueRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_2,
-  devUrl: devUrl_0_0_0_2,
-  prodUrl: prodUrl_0_0_0_2,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/default_value',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_2,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -2114,16 +1977,7 @@ export interface HelloMockjsJson5Response {
  * @更新时间 1644917600
  */
 type HelloMockjsJson5RequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/mockjs_json5',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/mockjs_json5', undefined, string, string, true>
 >
 
 /**
@@ -2134,15 +1988,15 @@ type HelloMockjsJson5RequestConfig = Readonly<
  * @更新时间 1644917600
  */
 const helloMockjsJson5RequestConfig: HelloMockjsJson5RequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_2,
-  devUrl: devUrl_0_0_0_2,
-  prodUrl: prodUrl_0_0_0_2,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/mockjs_json5',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_2,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -2256,7 +2110,7 @@ export interface HelloMockjs2Response {
  * @更新时间 1645001866
  */
 type HelloMockjs2RequestConfig = Readonly<
-  RequestConfig<'http://foo.bar/mock/32', '', 'http://prod.com/', '/__hello__/mockjs2', undefined, string, string, true>
+  RequestConfig<'', '', '', '/__hello__/mockjs2', undefined, string, string, true>
 >
 
 /**
@@ -2267,15 +2121,15 @@ type HelloMockjs2RequestConfig = Readonly<
  * @更新时间 1645001866
  */
 const helloMockjs2RequestConfig: HelloMockjs2RequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_2,
-  devUrl: devUrl_0_0_0_2,
-  prodUrl: prodUrl_0_0_0_2,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/mockjs2',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_2,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -2341,16 +2195,7 @@ export interface HelloRefTypeResponse {
  * @更新时间 1647247632
  */
 type HelloRefTypeRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/ref_type',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/ref_type', undefined, string, string, true>
 >
 
 /**
@@ -2361,15 +2206,15 @@ type HelloRefTypeRequestConfig = Readonly<
  * @更新时间 1647247632
  */
 const helloRefTypeRequestConfig: HelloRefTypeRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_2,
-  devUrl: devUrl_0_0_0_2,
-  prodUrl: prodUrl_0_0_0_2,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/ref_type',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_2,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -2393,10 +2238,11 @@ export const helloRefType = /*#__PURE__*/ (requestData?: HelloRefTypeRequest, ..
 
 helloRefType.requestConfig = helloRefTypeRequestConfig
 
-const mockUrl_0_0_0_3 = 'http://foo.bar/mock/32' as any
-const devUrl_0_0_0_3 = '' as any
-const prodUrl_0_0_0_3 = 'http://prod.com/' as any
-const dataKey_0_0_0_3 = undefined as any
+const categoryUID = '_0_0_0_3'
+const mockUrl = '' as any
+const devUrl = '' as any
+const prodUrl = '' as any
+const dataKey = undefined as any
 
 /**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
@@ -2424,16 +2270,7 @@ export interface HelloIssue_17Picture_3dDetailResponse {}
  * @更新时间 1610557430
  */
 type HelloIssue_17Picture_3dDetailRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/issue-17/picture_3d_detail',
-    undefined,
-    string,
-    string,
-    true
-  >
+  RequestConfig<'', '', '', '/__hello__/issue-17/picture_3d_detail', undefined, string, string, true>
 >
 
 /**
@@ -2444,15 +2281,15 @@ type HelloIssue_17Picture_3dDetailRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const helloIssue_17Picture_3dDetailRequestConfig: HelloIssue_17Picture_3dDetailRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_3,
-  devUrl: devUrl_0_0_0_3,
-  prodUrl: prodUrl_0_0_0_3,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/issue-17/picture_3d_detail',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_3,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: [],
   requestDataOptional: true,
@@ -2513,16 +2350,7 @@ export interface Hello_28GetResponse {}
  * @更新时间 1610557430
  */
 type Hello_28GetRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/28/get',
-    undefined,
-    string,
-    '   a' | ' b' | 'c ' | '    d    e   ',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/28/get', undefined, string, '   a' | ' b' | 'c ' | '    d    e   ', false>
 >
 
 /**
@@ -2533,15 +2361,15 @@ type Hello_28GetRequestConfig = Readonly<
  * @更新时间 1610557430
  */
 const hello_28GetRequestConfig: Hello_28GetRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_3,
-  devUrl: devUrl_0_0_0_3,
-  prodUrl: prodUrl_0_0_0_3,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/28/get',
   method: Method.GET,
   requestHeaders: {},
   requestBodyType: RequestBodyType.query,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_3,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['   a', ' b', 'c ', '    d    e   '],
   requestDataOptional: false,
@@ -2597,16 +2425,7 @@ export interface Hello_28PostFormResponse {}
  * @更新时间 1610557431
  */
 type Hello_28PostFormRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/28/post/form',
-    undefined,
-    string,
-    '   a' | ' b' | 'c ' | '    d    e   ',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/28/post/form', undefined, string, '   a' | ' b' | 'c ' | '    d    e   ', false>
 >
 
 /**
@@ -2617,15 +2436,15 @@ type Hello_28PostFormRequestConfig = Readonly<
  * @更新时间 1610557431
  */
 const hello_28PostFormRequestConfig: Hello_28PostFormRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_3,
-  devUrl: devUrl_0_0_0_3,
-  prodUrl: prodUrl_0_0_0_3,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/28/post/form',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.form,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_3,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['   a', ' b', 'c ', '    d    e   '],
   requestDataOptional: false,
@@ -2690,16 +2509,7 @@ export interface Hello_28PostJsonResponse {
  * @更新时间 1610557431
  */
 type Hello_28PostJsonRequestConfig = Readonly<
-  RequestConfig<
-    'http://foo.bar/mock/32',
-    '',
-    'http://prod.com/',
-    '/__hello__/28/post/json',
-    undefined,
-    string,
-    '   a' | ' b' | 'c ' | '    d    e   ',
-    false
-  >
+  RequestConfig<'', '', '', '/__hello__/28/post/json', undefined, string, '   a' | ' b' | 'c ' | '    d    e   ', false>
 >
 
 /**
@@ -2710,15 +2520,15 @@ type Hello_28PostJsonRequestConfig = Readonly<
  * @更新时间 1610557431
  */
 const hello_28PostJsonRequestConfig: Hello_28PostJsonRequestConfig = /*#__PURE__*/ {
-  mockUrl: mockUrl_0_0_0_3,
-  devUrl: devUrl_0_0_0_3,
-  prodUrl: prodUrl_0_0_0_3,
+  mockUrl: mockUrl,
+  devUrl: devUrl,
+  prodUrl: prodUrl,
   path: '/__hello__/28/post/json',
   method: Method.POST,
   requestHeaders: {},
   requestBodyType: RequestBodyType.json,
   responseBodyType: ResponseBodyType.json,
-  dataKey: dataKey_0_0_0_3,
+  dataKey: dataKey,
   paramNames: [],
   queryNames: ['   a', ' b', 'c ', '    d    e   '],
   requestDataOptional: false,
