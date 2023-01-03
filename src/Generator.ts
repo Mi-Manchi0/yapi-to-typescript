@@ -251,24 +251,17 @@ export class Generator {
                           interfaceCodes,
                           item => item.outputFilePath,
                         )
+
                         return Object.keys(groupedInterfaceCodes).map(
                           outputFilePath => {
                             const categoryCode = [
-                              ...uniq(
-                                sortByWeights(
-                                  groupedInterfaceCodes[outputFilePath],
-                                ).map(item => item.categoryUID),
-                              ).map(categoryUID =>
-                                syntheticalConfig.typesOnly
-                                  ? ''
-                                  : dedent`
-                                      const categoryUID = '${categoryUID}'
-                                      const mockUrl = '' as any
-                                      const devUrl = '' as any
-                                      const prodUrl = '' as any
-                                      const dataKey = undefined as any
-                                    `,
-                              ),
+                              // ...uniq(
+                              //   sortByWeights(
+                              //     groupedInterfaceCodes[outputFilePath],
+                              //   ).map(item => item.categoryUID),
+                              // ).map(categoryUID =>
+
+                              // ),
                               ...sortByWeights(
                                 groupedInterfaceCodes[outputFilePath],
                               ).map(item => item.code),
@@ -514,6 +507,11 @@ export class Generator {
                 ) & {
                   requestConfig: TRequestConfig
                 }
+
+                const mockUrl = '' as any
+                const devUrl = '' as any
+                const prodUrl = '' as any
+                const dataKey = undefined as any
 
                 ${content.join('\n\n').trim()}
               `

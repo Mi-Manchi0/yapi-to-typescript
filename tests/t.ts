@@ -26,6 +26,7 @@ const createConfig = (name: string, requestName: string, urls: string[]) => {
 export const configs: Config[] = [
   createConfig('bris', 'treatment', [
     'http://192.168.100.21:8000/q/service/scheduleTreatment.Schedule',
+    'http://192.168.100.21:8000/q/service/scheduleTreatment.TreatmentGroup',
   ]),
 ]
 
