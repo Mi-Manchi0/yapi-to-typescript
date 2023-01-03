@@ -2,13 +2,7 @@
 
 exports[`Generator comment.extraTags 使用正常: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @状态 已完成
@@ -601,13 +595,7 @@ exports[`Generator comment.extraTags 使用正常: 输出路径 1`] = `"index.ts
 
 exports[`Generator customTypeMapping 使用正常: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -1150,13 +1138,7 @@ exports[`Generator customTypeMapping 使用正常: 输出路径 1`] = `"index.ts
 
 exports[`Generator dataKey 使用正常: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [dataKey 例子↗](http://foo.bar/project/11/interface/api/81) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -1256,13 +1238,7 @@ exports[`Generator dataKey 使用正常: 输出路径 1`] = `"index.ts"`;
 
 exports[`Generator dataKey 深度使用正常: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [dataKey 深度路径↗](http://foo.bar/project/11/interface/api/1167) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -1350,13 +1326,7 @@ exports[`Generator dataKey 深度使用正常: 输出路径 1`] = `"index.ts"`;
 
 exports[`Generator outputFilePath 可以是函数: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -1897,13 +1867,7 @@ refTypeTest.requestConfig = refTypeTestRequestConfig",
 
 exports[`Generator outputFilePath 可以是函数: 输出内容 2`] = `
 Array [
-  "const categoryUID = '_0_0_0_1'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
  *
  * @分类 [issues↗](http://foo.bar/project/11/interface/api/cat_22)
@@ -2265,13 +2229,7 @@ exports[`Generator outputFilePath 可以是函数: 输出路径 2`] = `"issues.t
 
 exports[`Generator preproccessInterface 里可获取作用于当前接口的配置: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -2812,13 +2770,7 @@ dataTest.requestConfig = dataTestRequestConfig",
 
 exports[`Generator setRequestFunctionExtraInfo 使用正常: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -4536,7 +4488,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -6228,13 +6179,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 只生成请求数据的 JSON Schema: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -8046,7 +7991,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -9693,13 +9637,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 只生成返回数据的 JSON Schema: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -11484,13 +11422,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig",
 
 exports[`Generator 可获取接口、分类、项目在 YApi 上的地址: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -12060,7 +11992,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_1'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -12146,13 +12077,7 @@ deleteMethodTest.requestConfig = deleteMethodTestRequestConfig
 
 exports[`Generator 排除接口: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_1'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -12270,7 +12195,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -13845,12 +13769,6 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (
 }
 
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
-
-const categoryUID = '_0_1_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
 
 /**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
@@ -15466,13 +15384,7 @@ export default function request<TResponseData>(
 
 exports[`Generator 支持将 token 设为数组: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -17252,13 +17164,7 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (
 }
 
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig",
-  "const categoryUID = '_0_1_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -19070,7 +18976,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -20726,13 +20631,7 @@ export default function request<TResponseData>(
 
 exports[`Generator 支持项目设置里的接口基本路径: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -22544,7 +22443,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -24031,13 +23929,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 无分类注释: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @请求头 \`DELETE /__hello__/deleteMethod_test\`
@@ -25754,7 +25646,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -27241,13 +27132,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 无更新时间注释: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -28964,7 +28849,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -30546,13 +30430,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 无标签注释: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -32364,7 +32242,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -33756,13 +33633,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 无标题注释: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
  * @请求头 \`DELETE /__hello__/deleteMethod_test\`
  * @更新时间 1610557429
@@ -35384,7 +35255,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -36301,13 +36171,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 无注释: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-export interface DeleteMethodTestRequest {
+  "export interface DeleteMethodTestRequest {
   /**
    * ID
    */
@@ -37511,7 +37375,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -38998,13 +38861,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 无请求头注释: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -40721,7 +40578,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -42303,13 +42159,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 无链接注释: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 DELETE 方法 的 **请求类型**
  *
  * @分类 test
@@ -44121,7 +43971,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_1'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -45697,12 +45546,6 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (
 
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
-const categoryUID = '_0_0_0_2'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
 /**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
@@ -46175,12 +46018,6 @@ export const refTypeTest = /*#__PURE__*/ (requestData?: RefTypeTestRequest, ...a
 
 refTypeTest.requestConfig = refTypeTestRequestConfig
 
-const categoryUID = '_0_0_0_3'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
 /**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
  *
@@ -46548,13 +46385,7 @@ export default function request<TResponseData>(
 
 exports[`Generator 正确生成代码并写入文件 - 全部分类: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_1'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -48334,13 +48165,7 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (
 }
 
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig",
-  "const categoryUID = '_0_0_0_2'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -48876,13 +48701,7 @@ export const refTypeTest = /*#__PURE__*/ (
 }
 
 refTypeTest.requestConfig = refTypeTestRequestConfig",
-  "const categoryUID = '_0_0_0_3'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
  *
  * @分类 [issues↗](http://foo.bar/project/11/interface/api/cat_22)
@@ -49267,7 +49086,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -50887,13 +50705,7 @@ export default function request<TResponseData>(
 
 exports[`Generator 正确生成代码并写入文件 - 单分类: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -52705,7 +52517,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -54281,12 +54092,6 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (
 
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
-const categoryUID = '_0_0_0_1'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
 /**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
@@ -54803,13 +54608,7 @@ export default function request<TResponseData>(
 
 exports[`Generator 正确生成代码并写入文件 - 多分类: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -56589,13 +56388,7 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (
 }
 
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig",
-  "const categoryUID = '_0_0_0_1'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -57163,7 +56956,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_1'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -57641,12 +57433,6 @@ export const refTypeTest = /*#__PURE__*/ (requestData?: RefTypeTestRequest, ...a
 
 refTypeTest.requestConfig = refTypeTestRequestConfig
 
-const categoryUID = '_0_0_0_2'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
 /**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
  *
@@ -58014,13 +57800,7 @@ export default function request<TResponseData>(
 
 exports[`Generator 正确生成代码并写入文件 - 排除分类: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_1'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -58556,13 +58336,7 @@ export const refTypeTest = /*#__PURE__*/ (
 }
 
 refTypeTest.requestConfig = refTypeTestRequestConfig",
-  "const categoryUID = '_0_0_0_2'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
  *
  * @分类 [issues↗](http://foo.bar/project/11/interface/api/cat_22)
@@ -58928,7 +58702,6 @@ exports[`Generator 生成 JavaScript 代码: 接口文件 1`] = `
 import { QueryStringArrayFormat, Method, RequestBodyType, ResponseBodyType, prepare } from '@bfr/ytt';
 // @ts-ignore
 import request from './request';
-const categoryUID = '_0_0_0_1';
 const mockUrl = '';
 const devUrl = '';
 const prodUrl = '';
@@ -59636,11 +59409,6 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (requestData, ...args) => {
     return request(prepare(onlyPostFormDataTestRequestConfig, requestData), ...args);
 };
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig;
-const categoryUID = '_0_0_0_2';
-const mockUrl = '';
-const devUrl = '';
-const prodUrl = '';
-const dataKey = undefined;
 /**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求配置**
  *
@@ -59828,11 +59596,6 @@ export const refTypeTest = /*#__PURE__*/ (requestData, ...args) => {
     return request(prepare(refTypeTestRequestConfig, requestData), ...args);
 };
 refTypeTest.requestConfig = refTypeTestRequestConfig;
-const categoryUID = '_0_0_0_3';
-const mockUrl = '';
-const devUrl = '';
-const prodUrl = '';
-const dataKey = undefined;
 /**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求配置**
  *
@@ -60006,13 +59769,7 @@ exports[`Generator 生成 JavaScript 代码: 请求文件 1`] = `
 
 exports[`Generator 生成 JavaScript 代码: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_1'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -61792,13 +61549,7 @@ export const onlyPostFormDataTest = /*#__PURE__*/ (
 }
 
 onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig",
-  "const categoryUID = '_0_0_0_2'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -62334,13 +62085,7 @@ export const refTypeTest = /*#__PURE__*/ (
 }
 
 refTypeTest.requestConfig = refTypeTestRequestConfig",
-  "const categoryUID = '_0_0_0_3'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
  *
  * @分类 [issues↗](http://foo.bar/project/11/interface/api/cat_22)
@@ -62758,7 +62503,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -64625,13 +64369,7 @@ export default function request<TResponseData>(
 
 exports[`Generator 生成 React Hooks 代码: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)
@@ -66614,7 +66352,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -67193,13 +66930,7 @@ refTypeTest.requestConfig = refTypeTestRequestConfig
 
 exports[`Generator 生成的 JSON Schema 应包含默认值: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
  * @分类 [test2↗](http://foo.bar/project/11/interface/api/cat_20)
@@ -67767,7 +67498,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_0'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -69524,13 +69254,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig
 
 exports[`Generator 生成请求数据和返回数据的 JSON Schema: 输出内容 1`] = `
 Array [
-  "const categoryUID = '_0_0_0_0'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
-/**
+  "/**
  * 接口 [DELETE 方法↗](http://foo.bar/project/11/interface/api/45) 的 **请求类型**
  *
  * @分类 [test↗](http://foo.bar/project/11/interface/api/cat_18)

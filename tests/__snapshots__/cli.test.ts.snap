@@ -164,7 +164,6 @@ export type Request<
   requestConfig: TRequestConfig
 }
 
-const categoryUID = '_0_0_0_1'
 const mockUrl = '' as any
 const devUrl = '' as any
 const prodUrl = '' as any
@@ -1759,12 +1758,6 @@ export const helloGetOnlyPostFormData = /*#__PURE__*/ (
 
 helloGetOnlyPostFormData.requestConfig = helloGetOnlyPostFormDataRequestConfig
 
-const categoryUID = '_0_0_0_2'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
-
 /**
  * 接口 [hello↗](http://foo.bar/project/11/interface/api/135) 的 **请求类型**
  *
@@ -2237,12 +2230,6 @@ export const helloRefType = /*#__PURE__*/ (requestData?: HelloRefTypeRequest, ..
 }
 
 helloRefType.requestConfig = helloRefTypeRequestConfig
-
-const categoryUID = '_0_0_0_3'
-const mockUrl = '' as any
-const devUrl = '' as any
-const prodUrl = '' as any
-const dataKey = undefined as any
 
 /**
  * 接口 [17: path 含有数字时，大小写出现错误↗](http://foo.bar/project/11/interface/api/141) 的 **请求类型**
