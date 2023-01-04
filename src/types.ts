@@ -233,6 +233,7 @@ export interface Interface {
     required: Required
     /** 类型（YApi-X） */
     type?: RequestQueryType
+    items?: JSONSchema4['items']
   }>
   /** 仅 POST：请求内容类型。为 text, file, raw 时不必特殊处理。 */
   req_body_type: RequestBodyType
@@ -776,6 +777,7 @@ export interface PropDefinition {
   required: boolean
   /** 类型 */
   type: JSONSchema4['type']
+  items: JSONSchema4['items']
   /** 注释 */
   comment: string
 }

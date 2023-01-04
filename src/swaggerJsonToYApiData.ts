@@ -255,10 +255,14 @@ function handleSwagger(data, originTags = []) {
           parameters: SwaggerData.parameters,
         })
       }
+      // if (param.name === 'scheduleIdList' || param.name === 'planIdList') {
+      //   console.log(param)
+      // }
       const defaultParam = {
         name: param.name,
         desc: param.description,
-        type: param.schema?.type,
+        type: param.type,
+        items: param.items,
         required: param.required ? '1' : '0',
       }
 

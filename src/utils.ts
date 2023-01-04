@@ -242,10 +242,13 @@ export function jsonSchemaToJSTTJsonSchema(
     if (jsonSchema.type === 'object') {
       // 将 additionalProperties 设为 false
       if (typeof jsonSchema.additionalProperties === 'object') {
+        console.log(jsonSchema)
         jsonSchema.additionalProperties.additionalProperties = false
       } else {
         jsonSchema.additionalProperties = false
       }
+    } else {
+      jsonSchema.additionalProperties = false
     }
 
     // 删除 default，防止 json-schema-to-typescript 根据它推测类型
@@ -373,6 +376,8 @@ export function propDefinitionsToJsonSchema(
       >((res, prop) => {
         res[prop.name] = {
           type: prop.type,
+          items: prop.items,
+
           description: prop.comment,
           ...(prop.type === ('file' as any) ? { tsType: FileData.name } : {}),
         }
@@ -441,6 +446,7 @@ export function getRequestDataJsonSchema(
             type: (item.type === RequestFormItemType.file
               ? 'file'
               : 'string') as any,
+            items: undefined,
             comment: item.desc,
           })),
           customTypeMapping,
@@ -472,6 +478,7 @@ export function getRequestDataJsonSchema(
         name: item.name,
         required: item.required === Required.true,
         type: item.type || 'string',
+        items: item.items,
         comment: item.desc,
       })),
       customTypeMapping,
@@ -501,6 +508,7 @@ export function getRequestDataJsonSchema(
         required: true,
         type: item.type || 'string',
         comment: item.desc,
+        items: undefined,
       })),
       customTypeMapping,
     )
