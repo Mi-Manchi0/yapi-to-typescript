@@ -1,6 +1,8 @@
 # 更新日志
 
 
+### [1.1.5](http://192.168.100.132:3030/web/yapi-to-typescript/compare/v1.1.4...v1.1.5) (2023-01-04)
+
 ### [1.1.4](http://192.168.100.132:3030/web/yapi-to-typescript/compare/v1.1.3...v1.1.4) (2023-01-04)
 
 ### [1.1.3](http://192.168.100.132:3030/web/yapi-to-typescript/compare/v1.1.2...v1.1.3) (2023-01-03)
