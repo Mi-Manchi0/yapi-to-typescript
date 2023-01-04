@@ -242,7 +242,6 @@ export function jsonSchemaToJSTTJsonSchema(
     if (jsonSchema.type === 'object') {
       // 将 additionalProperties 设为 false
       if (typeof jsonSchema.additionalProperties === 'object') {
-        console.log(jsonSchema)
         jsonSchema.additionalProperties.additionalProperties = false
       } else {
         jsonSchema.additionalProperties = false
