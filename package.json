@@ -1,6 +1,6 @@
 {
   "name": "@bfr/ytt",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "根据 YApi 的接口定义生成 TypeScript/JavaScript 的接口类型及其请求函数代码。",
   "keywords": [
     "yapi",
@@ -64,7 +64,7 @@
     "prompts": "^2.0.4",
     "proxy-agent": "^5.0.0",
     "signal-exit": "^3.0.3",
-    "swagger-client": "^3.12.0",
+    "swagger-client": "3.18.5",
     "to-json-schema": "^0.2.5",
     "ts-node": "^8.0.2",
     "typescript": "^4.2.3",
