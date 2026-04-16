@@ -648,7 +648,8 @@ export async function getPrettierOptions(): Promise<prettier.Options> {
   }
 }
 
-export const getCachedPrettierOptions = memoize(getPrettierOptions)
+export const getCachedPrettierOptions: () => Promise<prettier.Options> =
+  memoize(getPrettierOptions) as any
 
 export async function httpGet<T>(
   url: string,

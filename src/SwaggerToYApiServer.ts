@@ -1,3 +1,4 @@
+/// <reference path="../types/api-spec-converter/index.d.ts" />
 import Converter from 'api-spec-converter'
 import getAvailablePort from 'get-port'
 import http from 'http'

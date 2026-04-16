@@ -1,5 +1,5 @@
 {
-  "name": "@bfr/ytt",
+  "name": "@f_anaan/ytt",
   "version": "1.1.6",
   "description": "根据 YApi 的接口定义生成 TypeScript/JavaScript 的接口类型及其请求函数代码。",
   "keywords": [
@@ -20,13 +20,17 @@
   "bin": {
     "ytt": "lib/cjs/cli.js"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "lib"
   ],
   "scripts": {
     "build": "haoma compile",
-    "release": "yarn testOnly && standard-version -a && yarn build &&  git push --follow-tags origin main && npm publish",
-    "releaseBeta": "yarn testOnly && standard-version -a --release-as patch --prerelease beta && yarn build && git push --follow-tags origin main && npm publish --tag next",
+    "release": "pnpm testOnly && standard-version -a && pnpm build && git push --follow-tags origin main && npm publish --registry https://registry.npmjs.org/",
+    "releaseBeta": "pnpm testOnly && standard-version -a --release-as patch --prerelease beta && pnpm build && git push --follow-tags origin main && npm publish --tag next --registry https://registry.npmjs.org/",
     "test": "jest --coverage",
     "testApi": "ts-node -T src/cli.ts",
     "testOnly": "jest",
@@ -84,7 +88,7 @@
     "codecov": "^3",
     "eslint": "^7",
     "gh-pages": "^2.0.1",
-    "haoma": "^2.31.0",
+    "haoma": "^3.10.1",
     "husky": "^4",
     "jest": "^26",
     "lint-staged": "^10",
@@ -97,6 +101,6 @@
     "typescript-snapshots-plugin": "^1.7.0"
   },
   "engines": {
-    "node": ">=10.19.0"
+    "node": ">=18.0.0"
   }
 }

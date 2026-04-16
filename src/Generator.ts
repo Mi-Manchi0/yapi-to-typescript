@@ -581,7 +581,7 @@ export class Generator {
     return res.data || res
   }
 
-  fetchProject = memoize(
+  fetchProject: (config: SyntheticalConfig) => Promise<Project> = memoize(
     async ({ serverUrl, token }: SyntheticalConfig) => {
       const projectInfo = await this.fetchApi<Project>(
         `${serverUrl}/api/project/get`,
@@ -598,9 +598,9 @@ export class Generator {
       return projectInfo
     },
     ({ serverUrl, token }: SyntheticalConfig) => `${serverUrl}|${token}`,
-  )
+  ) as any
 
-  fetchExport = memoize(
+  fetchExport: (config: SyntheticalConfig) => Promise<CategoryList> = memoize(
     async ({ serverUrl, token }: SyntheticalConfig) => {
       const projectInfo = await this.fetchProject({ serverUrl, token })
       const categoryList = await this.fetchApi<CategoryList>(
@@ -628,7 +628,7 @@ export class Generator {
       })
     },
     ({ serverUrl, token }: SyntheticalConfig) => `${serverUrl}|${token}`,
-  )
+  ) as any
 
   /** 获取分类的接口列表 */
   async fetchInterfaceList({
