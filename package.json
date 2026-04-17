@@ -1,6 +1,6 @@
 {
   "name": "@f_anaan/ytt",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "根据 YApi 的接口定义生成 TypeScript/JavaScript 的接口类型及其请求函数代码。",
   "keywords": [
     "yapi",
@@ -19,10 +19,6 @@
   "types": "lib/esm/index.d.ts",
   "bin": {
     "ytt": "lib/cjs/cli.js"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "lib"
@@ -53,7 +49,10 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@types/json-schema": "^7.0.9",
+    "@types/lodash-es": "^4.17.12",
+    "@types/qs": "^6.15.0",
     "api-spec-converter": "^2.12.0",
+    "axios": "^1.15.0",
     "change-case": "^3.0.2",
     "consola": "^2.3.0",
     "dayjs": "^1.8.32",
@@ -62,11 +61,14 @@
     "get-port": "^5.1.1",
     "json-schema-to-typescript": "^10.1.4",
     "json5": "^2.1.0",
+    "lodash": "^4.18.1",
+    "lodash-es": "^4.18.1",
     "node-fetch": "^2",
     "ora": "^3.4.0",
     "prettier": "^2.7.1",
     "prompts": "^2.0.4",
     "proxy-agent": "^5.0.0",
+    "qs": "^6.15.1",
     "signal-exit": "^3.0.3",
     "swagger-client": "3.18.5",
     "to-json-schema": "^0.2.5",
@@ -78,6 +80,7 @@
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
     "@types/json5": "^0.0.30",
+    "@types/lodash": "^4.17.24",
     "@types/node": "^10.12.10",
     "@types/node-fetch": "^2.6.2",
     "@types/prompts": "^1.2.0",
@@ -85,6 +88,7 @@
     "@types/swagger-schema-official": "^2.0.21",
     "@types/to-json-schema": "^0.2.0",
     "@types/yargs": "^16.0.1",
+    "babel-jest": "26.6.3",
     "codecov": "^3",
     "eslint": "^7",
     "gh-pages": "^2.0.1",
@@ -102,5 +106,15 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "babel-jest": "26.6.3",
+      "@jest/transform": "26.6.2"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
