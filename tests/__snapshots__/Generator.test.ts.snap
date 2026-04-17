@@ -58713,7 +58713,7 @@ const dataKey = undefined;
  * @请求头 \`DELETE /__hello__/deleteMethod_test\`
  * @更新时间 1610557429
  */
-const deleteMethodTestRequestConfig = {
+const deleteMethodTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -58750,7 +58750,7 @@ deleteMethodTest.requestConfig = deleteMethodTestRequestConfig;
  * @请求头 \`GET /__hello__/getMethod_test\`
  * @更新时间 1610557429
  */
-const getMethodTestRequestConfig = {
+const getMethodTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -58787,7 +58787,7 @@ getMethodTest.requestConfig = getMethodTestRequestConfig;
  * @请求头 \`GET /__hello__/json5Response_test\`
  * @更新时间 1610557429
  */
-const json5ResponseTestRequestConfig = {
+const json5ResponseTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -58824,7 +58824,7 @@ json5ResponseTest.requestConfig = json5ResponseTestRequestConfig;
  * @请求头 \`POST /__hello__/json5Request_test\`
  * @更新时间 1610557429
  */
-const json5RequestTestRequestConfig = {
+const json5RequestTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -58861,7 +58861,7 @@ json5RequestTest.requestConfig = json5RequestTestRequestConfig;
  * @请求头 \`POST /__hello__/postMethod_test\`
  * @更新时间 1610557429
  */
-const postMethodTestRequestConfig = {
+const postMethodTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -58898,7 +58898,7 @@ postMethodTest.requestConfig = postMethodTestRequestConfig;
  * @请求头 \`PUT /__hello__/putMethod_test\`
  * @更新时间 1610557429
  */
-const putMethodTestRequestConfig = {
+const putMethodTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -58935,7 +58935,7 @@ putMethodTest.requestConfig = putMethodTestRequestConfig;
  * @请求头 \`PUT /__hello__/dataKeyExample_test\`
  * @更新时间 1610557430
  */
-const dataKeyExampleTestRequestConfig = {
+const dataKeyExampleTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -58972,7 +58972,7 @@ dataKeyExampleTest.requestConfig = dataKeyExampleTestRequestConfig;
  * @请求头 \`POST /__hello__/upload_test\`
  * @更新时间 1610557430
  */
-const uploadTestRequestConfig = {
+const uploadTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59009,7 +59009,7 @@ uploadTest.requestConfig = uploadTestRequestConfig;
  * @请求头 \`POST /__hello__/test_test\`
  * @更新时间 1610557430
  */
-const testTestRequestConfig = {
+const testTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59046,7 +59046,7 @@ testTest.requestConfig = testTestRequestConfig;
  * @请求头 \`GET /__hello__/noResponseData_test\`
  * @更新时间 1610557430
  */
-const noResponseDataTestRequestConfig = {
+const noResponseDataTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59083,7 +59083,7 @@ noResponseDataTest.requestConfig = noResponseDataTestRequestConfig;
  * @请求头 \`POST /__hello__/emptyResponse_test\`
  * @更新时间 1610557430
  */
-const emptyResponseTestRequestConfig = {
+const emptyResponseTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59120,7 +59120,7 @@ emptyResponseTest.requestConfig = emptyResponseTestRequestConfig;
  * @请求头 \`POST /__hello__/path/:id/hello/:name/:pass/{avatar}/:test_test\`
  * @更新时间 1610557430
  */
-const testTestRequestConfig = {
+const testTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59157,7 +59157,7 @@ testTest.requestConfig = testTestRequestConfig;
  * @请求头 \`POST /__hello__/test/{id}/:hihihi_test\`
  * @更新时间 1610557430
  */
-const hihihiTestRequestConfig = {
+const hihihiTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59194,7 +59194,7 @@ hihihiTest.requestConfig = hihihiTestRequestConfig;
  * @请求头 \`POST /__hello__/test/{id}/:hihihi_1608478638207_test\`
  * @更新时间 1610557430
  */
-const hihihi_1608478638207TestRequestConfig = {
+const hihihi_1608478638207TestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59231,7 +59231,7 @@ hihihi_1608478638207Test.requestConfig = hihihi_1608478638207TestRequestConfig;
  * @请求头 \`GET /__hello__/rawResponse_test\`
  * @更新时间 1610557430
  */
-const rawResponseTestRequestConfig = {
+const rawResponseTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59268,7 +59268,7 @@ rawResponseTest.requestConfig = rawResponseTestRequestConfig;
  * @请求头 \`GET /__hello__/headers_test\`
  * @更新时间 1619432971
  */
-const headersTestRequestConfig = {
+const headersTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59305,7 +59305,7 @@ headersTest.requestConfig = headersTestRequestConfig;
  * @请求头 \`GET /__hello__/user/:id/avatar_test\`
  * @更新时间 1621501310
  */
-const avatarTestRequestConfig = {
+const avatarTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59342,7 +59342,7 @@ avatarTest.requestConfig = avatarTestRequestConfig;
  * @请求头 \`GET /__hello__/dataKey/deep_test\`
  * @更新时间 1626489548
  */
-const deepTestRequestConfig = {
+const deepTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59379,7 +59379,7 @@ deepTest.requestConfig = deepTestRequestConfig;
  * @请求头 \`GET /__hello__/get/only_post_form_data_test\`
  * @更新时间 1632493928
  */
-const onlyPostFormDataTestRequestConfig = {
+const onlyPostFormDataTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59417,7 +59417,7 @@ onlyPostFormDataTest.requestConfig = onlyPostFormDataTestRequestConfig;
  * @请求头 \`GET /__hello__/get2_test\`
  * @更新时间 1610557430
  */
-const get2TestRequestConfig = {
+const get2TestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59455,7 +59455,7 @@ get2Test.requestConfig = get2TestRequestConfig;
  * @请求头 \`GET /__hello__/default_value_test\`
  * @更新时间 1642140816
  */
-const defaultValueTestRequestConfig = {
+const defaultValueTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59492,7 +59492,7 @@ defaultValueTest.requestConfig = defaultValueTestRequestConfig;
  * @请求头 \`GET /__hello__/mockjs_json5_test\`
  * @更新时间 1644917600
  */
-const mockjsJson5TestRequestConfig = {
+const mockjsJson5TestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59529,7 +59529,7 @@ mockjsJson5Test.requestConfig = mockjsJson5TestRequestConfig;
  * @请求头 \`GET /__hello__/mockjs2_test\`
  * @更新时间 1645001866
  */
-const mockjs2TestRequestConfig = {
+const mockjs2TestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59566,7 +59566,7 @@ mockjs2Test.requestConfig = mockjs2TestRequestConfig;
  * @请求头 \`GET /__hello__/ref_type_test\`
  * @更新时间 1647247632
  */
-const refTypeTestRequestConfig = {
+const refTypeTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59603,7 +59603,7 @@ refTypeTest.requestConfig = refTypeTestRequestConfig;
  * @请求头 \`GET /__hello__/issue-17/picture_3d_detail_test\`
  * @更新时间 1610557430
  */
-const picture_3dDetailTestRequestConfig = {
+const picture_3dDetailTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59640,7 +59640,7 @@ picture_3dDetailTest.requestConfig = picture_3dDetailTestRequestConfig;
  * @请求头 \`GET /__hello__/28/get_test\`
  * @更新时间 1610557430
  */
-const getTestRequestConfig = {
+const getTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59677,7 +59677,7 @@ getTest.requestConfig = getTestRequestConfig;
  * @请求头 \`POST /__hello__/28/post/form_test\`
  * @更新时间 1610557431
  */
-const formTestRequestConfig = {
+const formTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
@@ -59714,7 +59714,7 @@ formTest.requestConfig = formTestRequestConfig;
  * @请求头 \`POST /__hello__/28/post/json_test\`
  * @更新时间 1610557431
  */
-const jsonTestRequestConfig = {
+const jsonTestRequestConfig = /*#__PURE__*/ {
     mockUrl: mockUrl,
     devUrl: devUrl,
     prodUrl: prodUrl,
