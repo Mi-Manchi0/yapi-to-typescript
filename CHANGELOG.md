@@ -1,6 +1,13 @@
 # 更新日志
 
 
+### [1.2.2](http://192.168.100.132:3030/web/yapi-to-typescript/compare/v1.2.1...v1.2.2) (2026-04-17)
+
+
+### 特性
+
+* add request module and keep cli tests compatible ([c02f79d](http://192.168.100.132:3030/web/yapi-to-typescript/commit/c02f79dc403356fd33894895cfc4b5b3b02882d8))
+
 ### [1.2.1](http://192.168.100.132:3030/web/yapi-to-typescript/compare/v1.2.0...v1.2.1) (2026-04-17)
 
 ## [1.2.0](http://192.168.100.132:3030/web/yapi-to-typescript/compare/v1.1.5...v1.2.0) (2026-04-17)
